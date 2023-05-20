@@ -11,6 +11,12 @@ for(let num = 1; num <= 50; num++){
   }
 
   if(num == 50){
-      console.log('50回カウントが終わりました。')
+      let count;
+      count = addcount("カウントが終わりました。");
+      alert(count);
+      function addcount(numA){
+        let addnum = "50回" + numA;
+        return addnum;
+      }
   }
 }
